@@ -1,0 +1,40 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Backend-API",
+    "description": "API para busca de CEP."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3333",
+      "description": "API de Desenvolvimento"
+    }
+  ],
+  "paths": {
+    "/cep/search-address": {
+      "get": {
+        "tags": [
+          "Address"
+        ],
+        "description": "Endpoint para obter um endereço via CEP.",
+        "parameters": [
+          {
+            "name": "cep",
+            "description": "Cep usado para buscar o endereço.",
+            "example": "21655530",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
