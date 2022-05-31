@@ -18,10 +18,10 @@ export default class GetCepController {
     const regexJustNumber = /\D/g;
 
     // Força a variável cep a ser uma string e depois faz um replace para
-    // retirar tudo que não for número
+    // retirar tudo que não for número.
     const cepFormated = (cep as string).replace(regexJustNumber, '');
 
-    // verifica se o Cep informado é válido ou inválido
+    // verifica se o Cep informado é válido ou inválido.
     if (cepFormated.length !== 8) {
       throw new AppError('CEP informado é inválido');
     }
