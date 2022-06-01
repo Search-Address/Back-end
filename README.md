@@ -3,6 +3,6 @@
   1. ```yarn ``` ou ```npm install ``` para baixar as dependências;
   2. ``` yarn dev ``` ou ``` npm rum dev ``` para rodar o Backend na porta 3333.
 
-&nbsp;
 - Rotas da aplicação;
   - ```/cep/search-address?cep={cep}``` para buscar o endereço.
+  - ```/doc``` para documentação.
